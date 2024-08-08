@@ -1,0 +1,11 @@
+.priority-message-body {
+  padding: 14px 10px;
+}
+
+.priority-message-link {
+  color: #007bff;
+  font-weight: bold;
+  border : 1px solid #007bff;
+  border-radius: 5px;
+  padding:3px;
+}

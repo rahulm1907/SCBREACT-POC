@@ -1,0 +1,26 @@
+.custom-navbar {
+  background-color: #0556a7;
+  color: white !important;
+}
+
+.profile-name-icon {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px 12px;
+}
+
+.nav-link {
+    color:white !important;
+}
+
+.notification-count-area {
+    position: absolute;
+    border: 0.5px solid transparent;
+    background-color: red;
+    border-radius: 50%;
+    top: 0;
+    right: -5px;
+    left: 9px;
+    font-size: 9px;
+    padding: 0 4px
+}

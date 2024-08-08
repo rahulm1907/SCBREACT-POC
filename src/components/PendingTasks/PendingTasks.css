@@ -1,0 +1,92 @@
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #007bff;
+  border-bottom: 0.5px solid #007bff;
+}
+
+.task-card h2 {
+  color: gray;
+  margin: 0;
+}
+
+.task-card p {
+  font-size: 1em;
+  margin: 10px 0;
+  color: #555;
+}
+
+.task-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-card ul li {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.carousel-indicators {
+  margin: 0 !important;
+  bottom: -25px !important;
+  left:150px !important;
+}
+
+.carousel-indicators button {
+  background-color: gray !important;
+  border-radius: 100% !important;
+  width: 8px !important;
+  height: 8px !important;
+}
+
+.carousel-indicators button.active {
+  background-color: #007bff !important;
+}
+
+.carousel-body-container{
+  margin-bottom: 30px;
+}
+
+.refresh-data-container{
+  color: #999;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  position: absolute;
+  bottom: 20px;
+}
+
+.refresh-data{
+  font-size: 12px;
+  color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 120px  !important;
+  width: 100px  !important;
+  outline: black  !important;
+  background-size: 10%, 10%  !important;
+  border-radius: 50%  !important;
+  background-image: none  !important;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  color: black;
+  margin-left: 50px;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: black;
+  margin-right: 50px;
+}

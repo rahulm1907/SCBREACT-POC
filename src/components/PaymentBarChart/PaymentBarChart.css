@@ -1,0 +1,39 @@
+.bar-chart {
+    text-align: center;
+    position: relative;
+  }
+  
+  .bar {
+    width: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .value {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .footer {
+    margin-top: 24px;
+    color: #999;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 12px;
+  }
+  
+  .bar-chart-label {
+    max-width: 10px;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .bar-chart-label:hover {
+    color: blue;
+  }
+  
+ 

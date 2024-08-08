@@ -1,0 +1,11 @@
+.button-component {
+  background-color: #0070e8 !important;
+  padding: 10px 20px !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  margin: 1em 0;
+  width: 15%;
+  text-align: left !important;
+  display: flex !important;
+  justify-content: center;
+}
