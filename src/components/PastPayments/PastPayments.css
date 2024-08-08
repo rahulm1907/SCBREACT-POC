@@ -3,7 +3,7 @@
 }
 
 .tabs button {
-  background-color: inherit;
+  background-color: #f9f9f9;
   border: none;
   outline: none;
   cursor: pointer;
@@ -14,12 +14,13 @@
 
 .tabs button:hover {
   color: #007bff;
-  border-bottom: 0.5px solid #007bff;
+  border-bottom: 2px solid #007bff;
 }
 
 .tabs button.activeTab {
   color: #007bff;
-  border-bottom: 0.5px solid #007bff;
+  border-bottom: 2px solid #007bff;
+  background-color: white;
 }
 
 .bar-chart-container {

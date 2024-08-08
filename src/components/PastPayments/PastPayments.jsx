@@ -23,16 +23,16 @@ const PastPayments = () => {
           </div>
         </div>
       </div>
-      <div className="card-body-container">
+      <div className="">
         <div className="tabs">
           <button
-            className={`${activeTab === 0 ? "activeTab" : ""}`}
+            className={`w-50 ${activeTab === 0 ? "activeTab" : ""}`}
             onClick={() => changeTab(0)}
           >
             CLIENT WORKFLOW
           </button>
           <button
-            className={`${activeTab === 1 ? "activeTab" : ""}`}
+            className={`w-50 ${activeTab === 1 ? "activeTab" : ""}`}
             onClick={() => changeTab(1)}
           >
             BANK WORKFLOW
