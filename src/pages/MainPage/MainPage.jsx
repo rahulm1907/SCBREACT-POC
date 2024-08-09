@@ -10,10 +10,11 @@ const MainPage = () => {
   return (
     <div>
       <Header />
-      <Container>
+      <div className="px-5">
         <ButtonComponent />
         <CardComponent />
-      </Container>
+      </div>
+
       <button className="feedback-button">
         <MdOutlineCampaign
           size={25}

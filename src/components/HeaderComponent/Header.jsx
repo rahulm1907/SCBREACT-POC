@@ -10,8 +10,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <Navbar className="custom-navbar" variant="dark" expand="lg">
-        <Container>
+      <Navbar className="custom-navbar px-4" variant="dark" expand="lg" >
           <Navbar.Brand className="d-flex justify-content-center align-items-center">
             <GiHamburgerMenu className="me-2" />
             Menu
@@ -43,7 +42,6 @@ const Header = () => {
               <p className="m-0">Logout</p>
             </div>
           </div>
-        </Container>
       </Navbar>
     </div>
   );
