@@ -29,8 +29,8 @@ const QuickNavigation = () => {
       <div className="card-title-container">Quick Navigation</div>
       <ul className="card-body-container">
         {quickNavigationItems.map((navigationItem, index) => (
-          <>
-            <li key={index} className='d-flex justify-content-between align-items-center'>
+          <div key={index}>
+            <li  className='d-flex justify-content-between align-items-center'>
               <div>
                 <div className="navigation-item-title">{navigationItem.title}</div>
                 <div className="navigation-item-description">{navigationItem.description}</div>
@@ -40,7 +40,7 @@ const QuickNavigation = () => {
               </span>
             </li>
             <hr className="horizontal-line" />
-          </>
+          </div>
         ))}
       </ul>
     </div>

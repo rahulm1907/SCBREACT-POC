@@ -1,16 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../CardComponent/CardComponent.css";
 import "../PastPayments/PastPayments.css";
 import { CiFilter } from "react-icons/ci";
 import { MdCached, MdOpenInFull } from "react-icons/md";
 import PaymentBarChart from "../PaymentBarChart/PaymentBarChart";
+import axios from "axios";
 
 const PastPayments = () => {
   const [activeTab, setActiveTab] = useState(0);
+  const [graphData, setGraphData] = useState({});
 
   const changeTab = (id) => {
     setActiveTab(id);
   };
+
+  useEffect(() => {
+    axios.get("http://localhost:3001/clientWorkFlowData")
+      .then((response) => 
+        setGraphData(response.data ))
+      .catch((error) => console.error("Error fetching data", error));
+  }, []);
 
   return (
     <div className="card-outer-container">
@@ -44,12 +53,12 @@ const PastPayments = () => {
               <div className="bar-chart-container">
                 <PaymentBarChart
                   chartLabel="Processed by Bank"
-                  value={25}
+                  value={graphData?.proccessedByBank}
                   color="#3de98d"
                 />
                 <PaymentBarChart
                   chartLabel="Rejected by Bank"
-                  value={14}
+                  value={graphData?.rejectedByBank}
                   color="#21adfe"
                 />
               </div>
@@ -61,7 +70,7 @@ const PastPayments = () => {
             )}
           </div>
           <div className="date-footer">
-            <MdCached size={20} className="me-2"/>
+            <MdCached size={20} className="me-2" />
             <p className="m-0 refresh-data">
               Last Updated 17/07/2024 04:09:44 PM
             </p>
